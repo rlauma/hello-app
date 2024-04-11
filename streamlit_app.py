@@ -12,8 +12,8 @@ data = {
 # Convert the data to a DataFrame
 df = pd.DataFrame(data)
 
-# Reset the index to remove the index column
-df_display = df.reset_index(drop=True)
+# Set 'Taukskābes nosaukums' column as index
+df.set_index('Taukskābes nosaukums', inplace=True)
 
 # Display the table without the index column
-st.table(df_display)
+st.table(df)
