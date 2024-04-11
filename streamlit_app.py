@@ -6,7 +6,7 @@ data = {
     'Triviālais nosaukums': ['Taukskābes nosaukums', 'Ķīmiskā formula', 'Oglekļu atomu skaits', 'Ķēžu garums'],
     'Age': [25, 30, 35, 30],
     'Location': ['New York', 'London', 'Tokyo', 'Tokyo']
-}
+
 
 # Convert the data to a DataFrame
 df = pd.DataFrame(data)
