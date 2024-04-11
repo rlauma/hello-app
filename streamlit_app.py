@@ -5,7 +5,7 @@ import pandas as pd
 st.header("Triviālais nosaukums")
 data = {
 # Display some text
-st.write("This text is now in black color.")
+st.write("This text is now in black color."),
     'Taukskābes nosaukums': ['palmitīnskābe (16:0)', 'stearīnskābe (18:0)', 'oleīnskābe (18:1n-9)', 'linolēnskābe (18:2n-6)', 'palmitoleīnskābe (16:1n-7)'],
     'Ķīmiskā formula': ['C16H32O2', 'C18H36O2', 'C18H34O2', 'C18H32O2', 'C16H30O2'],
 
