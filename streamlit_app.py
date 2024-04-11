@@ -2,17 +2,8 @@ import streamlit as st
 st.title("Dzīvnieku katalogs")
 
 
-st.header("Start of the Checkbox Section")
-like = st.checkbox("Do you like this app?")
-button2 = st.button("Submit")
-if button2:
-    if like:
-        st.write("Thanks. I like it too.")
-    else:
-        st.write("I'm sorry. You have bad tastes.")
-
-st.header("Start of the Radio Button Section")
-animal = st.radio("What animal is your favorite?", ("Lion", "Tiger", "Bear"))
+st.header("Vispārīgie dati")
+animal = st.radio("What animal is your favorite?", ("Brūnais lācis", "Ziemeļu sikspārnis", "Eirāzijas āpsis"))
 button3 = st.button("Submit Animal")
 if button3:
     st.write(animal)
