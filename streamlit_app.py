@@ -10,6 +10,6 @@ if button3:
         st.write("Ursus arctos")
     if animal == "Ziemeļu sikspārnis":
         st.write("Eptesicus nilssoni")
-  if animal == "Eirāzijas āpsis":
+    if animal == "Eirāzijas āpsis":
         st.write("Meles meles")
 
