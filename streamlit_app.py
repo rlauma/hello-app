@@ -39,6 +39,19 @@ if button3:
             }
             </style>
         """
+
+
+        #create data
+data = [["Mavs", 99], 
+        ["Suns", 91], 
+        ["Spurs", 94], 
+        ["Nets", 88]]
+  
+#define header names
+col_names = ["Team", "Points"]
+  
+#display table
+print(tabulate(data, headers=col_names, tablefmt="fancy_grid", showindex="always"))
         st.write(table_style, unsafe_allow_html=True)
 
         # Display the table
