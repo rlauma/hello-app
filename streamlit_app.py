@@ -12,7 +12,7 @@ if button3:
     if animal == "Ziemeļu sikspārnis":
         st.write("Eptesicus nilssoni")
     if animal == "Eirāzijas āpsis":
-
+st.write
 # Display some text
 import pandas as pd
 
