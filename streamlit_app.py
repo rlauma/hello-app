@@ -1,11 +1,16 @@
 import streamlit as st
+
+# Set the text color to black
+st.markdown('<style>div.stMarkdown { color: black }</style>', unsafe_allow_html=True)
+
+# Display some text
+st.write("This text is now in black color.")
 import pandas as pd
 
 # Create some sample data
 st.header("Triviālais nosaukums")
 
 # Display some text
-st.write("This text is now in black color."),
 
 data = { 
     'Taukskābes nosaukums': ['palmitīnskābe (16:0)', 'stearīnskābe (18:0)', 'oleīnskābe (18:1n-9)', 'linolēnskābe (18:2n-6)', 'palmitoleīnskābe (16:1n-7)'],
