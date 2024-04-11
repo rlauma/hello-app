@@ -8,9 +8,12 @@ data = {
     'Ķīmiskā formula': [25, 30, 35, 30, 30],
     'Oglekļu atomu skaits': ['New York', 'London', 'Tokyo', 'Tokyo', 'Tokyo'],
 }
-    
+
 # Convert the data to a DataFrame
 df = pd.DataFrame(data)
 
-# Remove the row indices from the DataFrame and display the table without row indices
-st.table(df, index=False)
+# Reset the index to remove the index column
+df_display = df.reset_index(drop=True)
+
+# Display the table without the index column
+st.table(df_display)
