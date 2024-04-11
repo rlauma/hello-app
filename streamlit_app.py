@@ -39,20 +39,6 @@ if button5:
     st.write(options)
 
 
-st.header("Start of the Slider Section")
-epochs_num = st.slider("How many epochs?", 1,100, 10)
-if st.button("Slider Button"):
-    st.write(epochs_num)
-
-st.header("Start of the Text Input Section")
-user_text = st.text_input("What's your favorite movie?", "Star Wars Ep. IV")
-if st.button("Text Button"):
-    st.write(int(user_text))
-
-user_num = st.number_input("What's your favorite number?")
-if st.button("Number Button"):
-    st.write(user_num)
-
 def run_sentiment_analysis(txt):
     st.write(f"Analysis Done. {txt}")
 
