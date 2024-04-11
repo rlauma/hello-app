@@ -10,6 +10,15 @@ if button3:
     if animal == "Lion":
         st.write("ROAR!")
 
+
+
+
+
+
+
+
+
+
 st.header("Start of the Selectbox Section")
 animal2 = st.selectbox("What animal is your favorite?", ("Lion", "Tiger", "Bear"))
 button4 = st.button("Submit Animal 2")
