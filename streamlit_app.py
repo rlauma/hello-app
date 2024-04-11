@@ -5,8 +5,8 @@ import pandas as pd
 st.header("Triviālais nosaukums")
 data = {
     'Taukskābes nosaukums': ['Taukskābes nosaukums', 'Ķīmiskā formula', 'Oglekļu atomu skaits', 'Ķēžu garums'],
-    'Ķīmiskā formula': [25, 30, 35, 30],
-    'Oglekļu atomu skaits': ['New York', 'London', 'Tokyo', 'Tokyo'],
+    'Ķīmiskā formula': [25, 30, 35, 30, 30],
+    'Oglekļu atomu skaits': ['New York', 'London', 'Tokyo', 'Tokyo', 'Tokyo'],
     'Taukskābes nosaukums': ['Taukskābes nosaukums', 'Ķīmiskā formula', 'Oglekļu atomu skaits', 'Ķēžu garums']
 }
     
