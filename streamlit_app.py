@@ -1,5 +1,20 @@
 import streamlit as st
 
+st.header("Dzīvnieku katalogs")
+
+
+st.header("Vispārīgie dati")
+animal = st.radio("Dzīvnieku nosaukums", ("Brūnais lācis", "Ziemeļu sikspārnis", "Eirāzijas āpsis"))
+button3 = st.button("Apstiprināt")
+if button3:
+    if animal == "Brūnais lācis":
+        st.write("Ursus arctos")
+    if animal == "Ziemeļu sikspārnis":
+        st.write("Eptesicus nilssoni")
+    if animal == "Eirāzijas āpsis":
+        st.write("Meles meles"
+
+
 # Set the text color to black
 st.markdown('<style>div.stMarkdown { color: black }</style>', unsafe_allow_html=True)
 
