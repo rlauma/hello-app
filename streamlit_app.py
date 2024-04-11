@@ -7,7 +7,6 @@ data = {
     'Taukskābes nosaukums': ['Taukskābes nosaukums', 'Ķīmiskā formula', 'Oglekļu atomu skaits', 'Ķēžu garums', 'Ķēžu garums'],
     'Ķīmiskā formula': [25, 30, 35, 30, 30],
     'Oglekļu atomu skaits': ['New York', 'London', 'Tokyo', 'Tokyo', 'Tokyo'],
-    'Taukskābes nosaukums': ['Taukskābes nosaukums', 'Ķīmiskā formula', 'Oglekļu atomu skaits', 'Ķēžu garums', 'Ķēžu garums']
 }
     
 # Convert the data to a DataFrame
