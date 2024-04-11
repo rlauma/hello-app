@@ -12,9 +12,5 @@ data = {
 # Convert the data to a DataFrame
 df = pd.DataFrame(data)
 
-# Remove the row indices from the DataFrame
-df_display = df.copy()
-df_display.index = [''] * len(df)  # Replace row indices with empty strings
-
-# Display the table without row indices
-st.table(df_display)
+# Remove the row indices from the DataFrame and display the table without row indices
+st.table(df, index=False)
