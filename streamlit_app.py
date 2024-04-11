@@ -13,11 +13,6 @@ if button3:
         st.write("Eptesicus nilssoni")
     if animal == "Eirāzijas āpsis":
         st.write("Meles meles")
-
-
-# Set the text color to black
-st.markdown('<style>div.stMarkdown { color: black }</style>', unsafe_allow_html=True)
-
 # Display some text
 import pandas as pd
 
@@ -51,3 +46,5 @@ st.write(table_style, unsafe_allow_html=True)
 
 # Display the table
 st.table(df)
+
+
