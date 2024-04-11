@@ -7,8 +7,12 @@ animal = st.radio("Dzīvnieku nosaukums", ("Brūnais lācis", "Ziemeļu sikspār
 button3 = st.button("Apstiprināt")
 if button3:
     st.write(animal)
-    if animal == "Lion":
-        st.write("ROAR!")
+    if animal == "Brūnais lācis":
+        st.write("Ursus arctos")
+        if animal == "Ziemeļu sikspārnis":
+        st.write("Eptesicus nilssoni")
+        if animal == "Eirāzijas āpsis":
+        st.write("Meles meles")
 
 
 
