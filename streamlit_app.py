@@ -2,8 +2,8 @@ import streamlit as st
 import pandas as pd
 
 # Create some sample data
+st.header("Triviālais nosaukums")
 data = {
-    st.header("Triviālais nosaukums")
     'Taukskābes nosaukums': ['Taukskābes nosaukums', 'Ķīmiskā formula', 'Oglekļu atomu skaits', 'Ķēžu garums'],
     'Age': [25, 30, 35, 30],
     'Location': ['New York', 'London', 'Tokyo', 'Tokyo']
