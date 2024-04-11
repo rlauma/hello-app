@@ -4,7 +4,6 @@ import streamlit as st
 st.markdown('<style>div.stMarkdown { color: black }</style>', unsafe_allow_html=True)
 
 # Display some text
-st.write("This text is now in black color.")
 import pandas as pd
 
 # Create some sample data
@@ -22,8 +21,18 @@ data = {
 # Convert the data to a DataFrame
 df = pd.DataFrame(data)
 
-# Set 'Taukskābes nosaukums' column as index
-df.set_index('Taukskābes nosaukums', inplace=True)
+# Set the CSS style for the table to make text color black
+table_style = """
+    <style>
+    .dataframe tbody tr th {
+        color: black;
+    }
+    .dataframe tbody tr td {
+        color: black;
+    }
+    </style>
+"""
+st.write(table_style, unsafe_allow_html=True)
 
-# Display the table without the index column
+# Display the table
 st.table(df)
