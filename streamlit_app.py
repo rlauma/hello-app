@@ -8,6 +8,7 @@ button3 = st.button("Apstiprināt")
 if button3:
     st.write(animal)
     if animal == "Brūnais lācis":
+        st.write("Ursus arctos")
 
 
 
