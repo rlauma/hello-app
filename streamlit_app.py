@@ -3,7 +3,7 @@ st.title("Dzīvnieku katalogs")
 
 
 st.header("Vispārīgie dati")
-animal = st.radio("What animal is your favorite?", ("Brūnais lācis", "Ziemeļu sikspārnis", "Eirāzijas āpsis"))
+animal = st.radio("Dzīvnieku nosaukums", ("Brūnais lācis", "Ziemeļu sikspārnis", "Eirāzijas āpsis"))
 button3 = st.button("Submit Animal")
 if button3:
     st.write(animal)
