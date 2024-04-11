@@ -1,4 +1,4 @@
-eimport streamlit as st
+
 st.title("Dzīvnieku katalogs")
 
 
