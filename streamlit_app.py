@@ -3,7 +3,7 @@ import pandas as pd
 
 # Create some sample data
 data = {
-    'Name': ['Alice', 'Bob', 'Charlie'],
+    'Triviālais nosaukums': ['Taukskābes nosaukums', 'Ķīmiskā formula', 'Oglekļu atomu skaits', 'Ķēžu garums'],
     'Age': [25, 30, 35],
     'Location': ['New York', 'London', 'Tokyo']
 }
