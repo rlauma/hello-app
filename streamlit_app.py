@@ -12,7 +12,7 @@ if button3:
     if animal == "Ziemeļu sikspārnis":
         st.write("Eptesicus nilssoni")
     if animal == "Eirāzijas āpsis":
-        st.write("Meles meles"
+        st.write("Meles meles")
 
 
 # Set the text color to black
