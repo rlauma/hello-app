@@ -26,7 +26,7 @@ if button3:
     elif animal == "Ziemeļu sikspārnis":
         st.write("Eptesicus nilssoni")
     elif animal == "Eirāzijas āpsis":
-        st.write("APSIS")
+        st.write("Meles meles")
 
         # Set the CSS style for the table to make text color black
         table_style = """
