@@ -1,16 +1,32 @@
 import streamlit as st
 import pandas as pd
 
-# Create some sample data
-data = { 
-    'Taukskābes nosaukums': ['palmitīnskābe (16:0)', 'stearīnskābe (18:0)', 'oleīnskābe (18:1n-9)', 'linolēnskābe (18:2n-6)', 'palmitoleīnskābe (16:1n-7)'],
-    'Ķīmiskā formula': ['C₁₆H₃₂O₂', 'C₁₈H₃₆O₂', 'C₁₈H₃₄O₂', 'C₁₈H₃₂O₂', 'C₁₆H₃₀O₂'],
-    'Oglekļu atomu skaits': ['16', '18', '18', '18', '16'],
-    'Dubultsaišu skaits': ['', '', '1', '2', '1'],
+# Create sample data for each animal
+data_brown_bear = { 
+    'Dzīvnieka nosaukums': ['Brūnais lācis'],
+    'Suga': ['Ursus arctos'],
+    'Barība': ['Omnivors'],
+    'Dzīvesvieta': ['Ziemeļi'],
 }
 
-# Convert the data to a DataFrame
-df = pd.DataFrame(data)
+data_bat = { 
+    'Dzīvnieka nosaukums': ['Ziemeļu sikspārnis'],
+    'Suga': ['Eptesicus nilssoni'],
+    'Barība': ['Insektofāgs'],
+    'Dzīvesvieta': ['Ziemeļi'],
+}
+
+data_badger = { 
+    'Dzīvnieka nosaukums': ['Eirāzijas āpsis'],
+    'Suga': ['Meles meles'],
+    'Barība': ['Omnivors'],
+    'Dzīvesvieta': ['Visās teritorijas'],
+}
+
+# Convert the data to DataFrames
+df_brown_bear = pd.DataFrame(data_brown_bear)
+df_bat = pd.DataFrame(data_bat)
+df_badger = pd.DataFrame(data_badger)
 
 # Display headers and radio button
 st.title("Dzīvnieku katalogs")
@@ -19,49 +35,13 @@ animal = st.radio("Dzīvnieku nosaukums", ("Brūnais lācis", "Ziemeļu sikspār
 button3 = st.button("Apstiprināt")
 
 # Display animal information when button is clicked
-if button3 and animal == "Eirāzijas āpsis":
-    # Display image from URL with caption
-    st.image("https://rigazoo.lv/wp-content/uploads/2023/05/apsis-3.jpeg", caption="Eirāzijas āpsis (Meles meles)", use_column_width=True)
-
-    # Display the header for the table with smaller text without bold
-    st.markdown("<h3 style='color: black; font-size: 16px;'>Taukskābju īpašības</h3>", unsafe_allow_html=True)
-
-    # Set the CSS style for the table to make text color black
-    table_style = """
-        <style>
-        .dataframe tbody tr th {
-            color: black;
-        }
-        .dataframe tbody tr td {
-            color: black;
-        }
-
-        
-        </style>
-
-# Display animal information when button is clicked
-if button3 and animal == "Brūnais lācis":
-    # Display image from URL with caption
-    st.image("https://rigazoo.lv/wp-content/uploads/2023/05/apsis-3.jpeg", caption="Eirāzijas āpsis (Meles meles)", use_column_width=True)
-
-    # Display the header for the table with smaller text without bold
-    st.markdown("<h3 style='color: black; font-size: 16px;'>Taukskābju īpašības</h3>", unsafe_allow_html=True)
-
-    # Set the CSS style for the table to make text color black
-    table_style = """
-        <style>
-        .dataframe tbody tr th {
-            color: black;
-        }
-        .dataframe tbody tr td {
-            color: black;
-        }
-
-        
-        </style>
-        
-    """
-    st.write(table_style, unsafe_allow_html=True)
-
-    # Display the table
-    st.table(df)
+if button3:
+    if animal == "Brūnais lācis":
+        st.table(df_brown_bear)
+        st.image("https://www.nps.gov/subjects/bears/images/Brown-bear-Katmai.jpg", caption="Brūnais lācis (Ursus arctos)", use_column_width=True)
+    elif animal == "Ziemeļu sikspārnis":
+        st.table(df_bat)
+        st.image("https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Eptesicus_nilssoni_%28Norway%29.jpg/800px-Eptesicus_nilssoni_%28Norway%29.jpg", caption="Ziemeļu sikspārnis (Eptesicus nilssoni)", use_column_width=True)
+    elif animal == "Eirāzijas āpsis":
+        st.table(df_badger)
+        st.image("https://rigazoo.lv/wp-content/uploads/2023/05/apsis-3.jpeg", caption="Eirāzijas āpsis (Meles meles)", use_column_width=True)
