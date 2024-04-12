@@ -3,7 +3,7 @@ import pandas as pd
 
 # Create some sample data
 data = { 
-    'Taukskābes nosaukums': ['palmitīnskābe (16:0)', 'stearīnskābe (18:0)', 'oleīnskābe (18:1n-9)', 'linolēnskābe (18:2n-6)', 'palmitoleīnskābe (16:1n-7)'],
+    'Taukskābes nosaukums': ['arahidonskābe (20:4n-6)', 'stearīnskābe (18:0)', 'oleīnskābe (18:1n-9)', 'linolēnskābe (18:2n-6)', 'palmitoleīnskābe (16:1n-7)'],
     'Ķīmiskā formula': ['C₁₆H₃₂O₂', 'C₁₈H₃₆O₂', 'C₁₈H₃₄O₂', 'C₁₈H₃₂O₂', 'C₁₆H₃₀O₂'],
     'Oglekļu atomu skaits': ['16', '18', '18', '18', '16'],
     'Dubultsaišu skaits': ['', '', '1', '2', '1'],
@@ -11,7 +11,7 @@ data = {
 
 # Create some sample data
 data = { 
-    'Taukskābes nosaukums': ['arahidonskābe (20:4n-6))', 'stearīnskābe (18:0)', 'oleīnskābe (18:1n-9)', 'linolēnskābe (18:2n-6)', 'palmitoleīnskābe (16:1n-7)'],
+    'Taukskābes nosaukums': ['palmitīnskābe (16:0)', 'stearīnskābe (18:0)', 'oleīnskābe (18:1n-9)', 'linolēnskābe (18:2n-6)', 'palmitoleīnskābe (16:1n-7)'],
     'Ķīmiskā formula': ['C₁₆H₃₂O₂', 'C₁₈H₃₆O₂', 'C₁₈H₃₄O₂', 'C₁₈H₃₂O₂', 'C₁₆H₃₀O₂'],
     'Oglekļu atomu skaits': ['16', '18', '18', '18', '16'],
     'Dubultsaišu skaits': ['', '', '1', '2', '1'],
