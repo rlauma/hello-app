@@ -30,8 +30,8 @@ if button3:
     # Display image from URL with caption
     st.image("https://rigazoo.lv/wp-content/uploads/2023/05/apsis-3.jpeg", caption="Eirāzijas āpsis (Meles meles)", use_column_width=True)
 
-    # Display the header for the table
-    st.subheader("Taukskābju īpašības")
+    # Display the header for the table with smaller text without bold
+    st.markdown("<h3 style='color: black; font-size: 16px;'>Taukskābju īpašības</h3>", unsafe_allow_html=True)
 
     # Set the CSS style for the table to make text color black
     table_style = """
