@@ -12,9 +12,9 @@ data_brown_bear = {
 # Create some sample data for Eirāzijas āpsis
 data_badger = { 
     'Taukskābes nosaukums': ['arahidonskābe (20:4n-6)', 'dokozaheksaēnskābe (22:6n-3)', 'heptadekānskābe (17:0)', 'stearīnskābe (18:0)', 'oleīnskābe (18:1n-9)'],
-    'Ķīmiskā formula': ['C₁₆H₃₂O₂', 'C₂₂H₃₂O₂', 'C₂₂₂₂₂H₂₂₂₂O₂₂₂₂', 'C₁₈H₃₆O₂', 'C18H34O2','C18H30O2','C18H30O2','C20H30O2'],
-    'Oglekļu atomu skaits': ['16', '22', 'XX', '18', '18', '18', '18', '20'],
-    'Dubultsaišu skaits': ['4', '6', '?', '?', '1', '3', '3', '5'],
+    'Ķīmiskā formula': ['C₂₀H₃₂O₂', 'C₂₂H₃₂O₂', 'C₁₇H₃₄O₂', 'C₁₈H₃₆O₂', 'C₁₈H₃₄O₂'],
+    'Oglekļu atomu skaits': ['20', '22', '17', '18', '18'],
+    'Dubultsaišu skaits': ['4', '6', '', '', '1'],
 }
 
 # Convert the data to DataFrames
