@@ -2,6 +2,10 @@ import streamlit as st
 import pandas as pd
 import streamlit as st
 
+# Display image from URL
+st.image("https://rigazoo.lv/wp-content/uploads/2023/05/apsis-3.jpeg", caption="Image caption", use_column_width=True)
+
+
 # Create some sample data
 st.header("Triviālais nosaukums")
 data = { 
