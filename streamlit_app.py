@@ -2,8 +2,6 @@ import streamlit as st
 import pandas as pd
 
 # Create some sample data
-st.header("Taukskābju īpašības")
-st.header("Triviālais nosaukums")
 data = { 
     'Taukskābes nosaukums': ['palmitīnskābe (16:0)', 'stearīnskābe (18:0)', 'oleīnskābe (18:1n-9)', 'linolēnskābe (18:2n-6)', 'palmitoleīnskābe (16:1n-7)'],
     'Ķīmiskā formula': ['C₁₆H₃₂O₂', 'C₁₈H₃₆O₂', 'C₁₈H₃₄O₂', 'C₁₈H₃₂O₂', 'C₁₆H₃₀O₂'],
@@ -15,7 +13,7 @@ data = {
 df = pd.DataFrame(data)
 
 # Display headers and radio button
-st.header("Dzīvnieku katalogs")
+st.title("Dzīvnieku katalogs")
 st.header("Vispārīgie dati")
 animal = st.radio("Dzīvnieku nosaukums", ("Brūnais lācis", "Ziemeļu sikspārnis", "Eirāzijas āpsis"))
 button3 = st.button("Apstiprināt")
