@@ -26,8 +26,8 @@ if button3:
     elif animal == "Ziemeļu sikspārnis":
         st.write("Eptesicus nilssoni")
 
-    # Display image from URL with caption in italic style
-    st.image("https://rigazoo.lv/wp-content/uploads/2023/05/apsis-3.jpeg", caption="Eirāzijas āpsis (Meles meles)", use_column_width=True, unsafe_allow_html=True)
+    # Display image from URL with caption
+    st.image("https://rigazoo.lv/wp-content/uploads/2023/05/apsis-3.jpeg", caption="Eirāzijas āpsis (Meles meles)", use_column_width=True)
 
     # Set the CSS style for the table to make text color black
     table_style = """
