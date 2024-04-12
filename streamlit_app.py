@@ -25,7 +25,7 @@ if button3:
         st.write("Ursus arctos")
     elif animal == "Ziemeļu sikspārnis":
         st.write("Eptesicus nilssoni")
-    elif animal == "Eirāzijas āpsis":
+
        
 
     # Display image from URL
