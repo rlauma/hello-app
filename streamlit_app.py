@@ -1,9 +1,6 @@
 import streamlit as st
 import pandas as pd
 
-# Set page layout to wide
-st.set_page_config(layout="wide")
-
 # Create some sample data
 st.header("Triviālais nosaukums")
 data = { 
@@ -31,18 +28,18 @@ if button3:
     elif animal == "Eirāzijas āpsis":
         st.write("APSIS")
 
-        # Set the CSS style for the table to make text color black
-        table_style = """
+        # Set the CSS style for the table to make text color black and set the width of the app
+        custom_css = f"""
             <style>
-            .dataframe tbody tr th {
+            .dataframe tbody tr th, .dataframe tbody tr td {{
                 color: black;
-            }
-            .dataframe tbody tr td {
-                color: black;
-            }
+            }}
+            .stApp {{
+                max-width: 1200px;
+            }}
             </style>
         """
-        st.write(table_style, unsafe_allow_html=True)
+        st.write(custom_css, unsafe_allow_html=True)
 
         # Display the table
         st.table(df)
