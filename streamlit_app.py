@@ -49,4 +49,4 @@ elif animal == "Ziemeļu sikspārnis":
 else:
     button_label = "Apstiprināt Eirāzijas āpsis"
     data_selected = df_badger
-    image_url = "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Brockhaus_and_Efron_Encyclopedic_Dictionary_b79_
+    image_url = "https://rigazoo.lv/wp-content/uploads/2023/05/apsis-3.jpeg"
