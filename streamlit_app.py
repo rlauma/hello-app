@@ -2,9 +2,6 @@ import streamlit as st
 import pandas as pd
 import streamlit as st
 
-# Display image from URL
-st.image("https://rigazoo.lv/wp-content/uploads/2023/05/apsis-3.jpeg", caption="Image caption", use_column_width=True)
-
 
 # Create some sample data
 st.header("Triviālais nosaukums")
@@ -31,7 +28,9 @@ if button3:
     elif animal == "Ziemeļu sikspārnis":
         st.write("Eptesicus nilssoni")
     elif animal == "Eirāzijas āpsis":
-        st.write("APSIS")
+        st.write("Meles meles")
+# Display image from URL
+st.image("https://rigazoo.lv/wp-content/uploads/2023/05/apsis-3.jpeg", caption="Eirāzijas āpsis (Meles meles)", use_column_width=True)
 
         # Set the CSS style for the table to make text color black
         table_style = """
