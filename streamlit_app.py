@@ -19,12 +19,7 @@ animal = st.radio("Dzīvnieku nosaukums", ("Brūnais lācis", "Ziemeļu sikspār
 button3 = st.button("Apstiprināt")
 
 # Display animal information when button is clicked
-if button3:
-    if animal == "Brūnais lācis":
-        st.write("Ursus arctos")
-    elif animal == "Ziemeļu sikspārnis":
-        st.write("Eptesicus nilssoni")
-
+if button3 and animal == "Eirāzijas āpsis":
     # Display image from URL with caption
     st.image("https://rigazoo.lv/wp-content/uploads/2023/05/apsis-3.jpeg", caption="Eirāzijas āpsis (Meles meles)", use_column_width=True)
 
