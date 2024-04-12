@@ -3,10 +3,10 @@ import pandas as pd
 
 # Create some sample data
 data = { 
-    'Taukskābes nosaukums': ['arahidonskābe (20:4n-6)', 'stearīnskābe (18:0)', 'oleīnskābe (18:1n-9)', 'linolēnskābe (18:2n-6)', 'palmitoleīnskābe (16:1n-7)'],
-    'Ķīmiskā formula': ['C₁₆H₃₂O₂', 'C₁₈H₃₆O₂', 'C₁₈H₃₄O₂', 'C₁₈H₃₂O₂', 'C₁₆H₃₀O₂'],
-    'Oglekļu atomu skaits': ['16', '18', '18', '18', '16'],
-    'Dubultsaišu skaits': ['', '', '1', '2', '1'],
+    'Taukskābes nosaukums': ['arahidonskābe (20:4n-6)', 'dokozaheksaēnskābe (22:6n-3)', 'heptadekānskābe (17:0)', 'stearīnskābe (18:0)', 'oleīnskābe (18:1n-9)'],
+    'Ķīmiskā formula': ['C₁₆H₃₂O₂', 'C₂₂H₃₂O₂', 'C₂₂₂₂₂H₂₂₂₂O₂₂₂₂', 'C₁₈H₃₆O₂', 'C18H34O2','C18H30O2','C18H30O2','C20H30O2'],
+    'Oglekļu atomu skaits': ['16', '22', 'XX', '18', '18', '18', '18', '20'],
+    'Dubultsaišu skaits': ['4', '6', '?', '?', '1', '3', '3', '5'],
 }
 
 # Create some sample data
