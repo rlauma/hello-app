@@ -28,18 +28,18 @@ if button3:
     elif animal == "Eirāzijas āpsis":
         st.write("APSIS")
 
-        # Set the CSS style for the table to make text color black and set the width of the app
-        custom_css = f"""
+        # Set the CSS style for the table to make text color black
+        table_style = """
             <style>
-            .dataframe tbody tr th, .dataframe tbody tr td {{
+            .dataframe tbody tr th {
                 color: black;
-            }}
-            .stApp {{
-                max-width: 1200px;
-            }}
+            }
+            .dataframe tbody tr td {
+                color: black;
+            }
             </style>
         """
-        st.write(custom_css, unsafe_allow_html=True)
+        st.write(table_style, unsafe_allow_html=True)
 
         # Display the table
         st.table(df)
