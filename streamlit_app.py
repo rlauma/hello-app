@@ -29,6 +29,7 @@ if button3:
        
 
     # Display image from URL
+    # Display "Meles meles" in italic style
     st.image("https://rigazoo.lv/wp-content/uploads/2023/05/apsis-3.jpeg", caption="Eirāzijas āpsis <i>(Meles meles)</i> ", use_column_width=True)
 
     # Set the CSS style for the table to make text color black
