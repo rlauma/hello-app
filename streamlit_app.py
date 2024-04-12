@@ -9,6 +9,14 @@ data = {
     'Dubultsaišu skaits': ['', '', '1', '2', '1'],
 }
 
+# Create some sample data
+data = { 
+    'Taukskābes nosaukums': ['palmitīnskābe (16:0)', 'stearīnskābe (18:0)', 'oleīnskābe (18:1n-9)', 'linolēnskābe (18:2n-6)', 'palmitoleīnskābe (16:1n-7)'],
+    'Ķīmiskā formula': ['C₁₆H₃₂O₂', 'C₁₈H₃₆O₂', 'C₁₈H₃₄O₂', 'C₁₈H₃₂O₂', 'C₁₆H₃₀O₂'],
+    'Oglekļu atomu skaits': ['16', '18', '18', '18', '16'],
+    'Dubultsaišu skaits': ['', '', '1', '2', '1'],
+} 
+
 # Convert the data to a DataFrame
 df = pd.DataFrame(data)
 
