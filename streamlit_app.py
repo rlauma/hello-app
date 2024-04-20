@@ -1,8 +1,6 @@
 import streamlit as st
 import pandas as pd
 
-
-
 # Create some sample data for the brown bear
 data_brown_bear = { 
     'Taukskābes nosaukums': ['palmitīnskābe (16:0)', 'stearīnskābe (18:0)', 'oleīnskābe (18:1n-9)', 'linolēnskābe (18:2n-6)', 'palmitoleīnskābe (16:1n-7)'],
@@ -20,11 +18,12 @@ st.header("Vispārīgie dati")
 animal = st.radio("Dzīvnieku nosaukums", ("Brūnais lācis", "Eirāzijas āpsis"))
 
 # Define button label and data based on selected animal
+button_label = "Apstiprināt"
+data_selected = None
+
 if animal == "Brūnais lācis":
-    button_label = "Apstiprināt"
     data_selected = df_brown_bear
 elif animal == "Eirāzijas āpsis":
-    button_label = "Apstiprināt"
     data_selected = df
 
 # Display animal information when button is clicked
