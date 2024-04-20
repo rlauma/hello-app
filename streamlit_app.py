@@ -1,12 +1,15 @@
 import streamlit as st
 import pandas as pd
 import requests
+from io import BytesIO
+
+# Load data from Google Drive Excel file
+excel_url = "https://docs.google.com/spreadsheets/d/1OXzGj1jhVuzCmnRkYV8v8MqisPmKkz2MDIB8vDxeVrc/export?format=xls"
+response = requests.get(excel_url)
+excel_data = response.content
 
 # Read Excel data into DataFrame
-df = pd.read_excel("data.xlsx", sheet_name="data", usecols="A")
-
-# Display the DataFrame
-st.write(df)
+df = pd.read_excel(BytesIO(excel_data), sheet_name="data", usecols=[0])
 
 # Create some sample data for the brown bear
 data_brown_bear = { 
@@ -39,20 +42,4 @@ if st.button(button_label):
         st.image("https://rigazoo.lv/wp-content/uploads/2023/05/apsis-3.jpeg", caption="Eirāzijas āpsis (Meles meles)", use_column_width=True)
 
     # Display the header for the table with smaller text without bold
-    st.markdown("<h3 style='color: black; font-size: 16px;'>Taukskābju īpašības</h3>", unsafe_allow_html=True)
-
-    # Set the CSS style for the table to make text color black
-    table_style = """
-        <style>
-        .dataframe tbody tr th {
-            color: black;
-        }
-        .dataframe tbody tr td {
-            color: black;
-        }
-        </style>
-    """
-    st.write(table_style, unsafe_allow_html=True)
-
-    # Display the table
-    st.table(data_selected)
+    st.markdown("
