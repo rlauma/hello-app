@@ -1,7 +1,14 @@
 import streamlit as st
 import pandas as pd
 
-# Create some sample data for the brown bear
+# Create some sample data
+data_badger = { 
+    'Taukskābes nosaukums': ['arahidonskābe (20:4n-6)', 'dokozaheksaēnskābe (22:6n-3)', 'heptadekānskābe (17:0)', 'stearīnskābe (18:0)', 'oleīnskābe (18:1n-9)'],
+    'Ķīmiskā formula': ['C₂₀H₃₂O₂', 'C₂₂H₃₂O₂', 'C₁₇H₃₄O₂', 'C₁₈H₃₆O₂', 'C₁₈H₃₄O₂'],
+    'Oglekļu atomu skaits': ['20', '22', '17', '18', '18'],
+    'Dubultsaišu skaits': ['4', '6', '', '', '1'],
+}
+
 data_brown_bear = { 
     'Taukskābes nosaukums': ['palmitīnskābe (16:0)', 'stearīnskābe (18:0)', 'oleīnskābe (18:1n-9)', 'linolēnskābe (18:2n-6)', 'palmitoleīnskābe (16:1n-7)'],
     'Ķīmiskā formula': ['C₁₆H₃₂O₂', 'C₁₈H₃₆O₂', 'C₁₈H₃₄O₂', 'C₁₈H₃₂O₂', 'C₁₆H₃₀O₂'],
@@ -9,7 +16,8 @@ data_brown_bear = {
     'Dubultsaišu skaits': ['', '', '1', '2', '1'],
 }
 
-# Create DataFrame for brown bear
+# Convert the data to DataFrames
+df_badger = pd.DataFrame(data_badger)
 df_brown_bear = pd.DataFrame(data_brown_bear)
 
 # Display headers and radio button
@@ -18,13 +26,12 @@ st.header("Vispārīgie dati")
 animal = st.radio("Dzīvnieku nosaukums", ("Brūnais lācis", "Eirāzijas āpsis"))
 
 # Define button label and data based on selected animal
-button_label = "Apstiprināt"
-data_selected = None
-
 if animal == "Brūnais lācis":
+    button_label = "Apstiprināt"
     data_selected = df_brown_bear
 elif animal == "Eirāzijas āpsis":
-    data_selected = df
+    button_label = "Apstiprināt"
+    data_selected = df_badger
 
 # Display animal information when button is clicked
 if st.button(button_label):
