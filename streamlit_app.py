@@ -1,23 +1,12 @@
 import streamlit as st
 import pandas as pd
-import gspread
-from google.oauth2.service_account import Credentials
-from gspread_pandas import Spread, Client
 
-# Authenticate with Google Sheets using a service account key file
-credentials = Credentials.from_service_account_file("path/to/service_account_key.json")
-client = gspread.authorize(credentials)
-
-# Open the Google Sheets document
-spread = Spread("1OXzGj1jhVuzCmnRkYV8v8MqisPmKkz2MDIB8vDxeVrc", client=client)
-
-# Read data from the "data" sheet
-df = spread.sheet_to_df(sheet="data")
+# Read data from the Google Sheets document
+google_sheets_url = "https://docs.google.com/spreadsheets/d/1OXzGj1jhVuzCmnRkYV8v8MqisPmKkz2MDIB8vDxeVrc/export?format=xlsx"
+df = pd.read_excel(google_sheets_url, sheet_name="data", usecols=[0])
 
 # Display the DataFrame
 st.write(df)
-
-
 
 # Create some sample data for the brown bear
 data_brown_bear = { 
