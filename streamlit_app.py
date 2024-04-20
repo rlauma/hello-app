@@ -3,10 +3,10 @@ import pandas as pd
 import requests
 
 # Read Excel data into DataFrame
-df = pd.read_excel("data.xlsx")
+df = pd.read_excel("data.xlsx", sheet_name="data", usecols="A")
 
-# Print the first few rows of the DataFrame to check if data is loaded correctly
-print(df.head())
+# Display the DataFrame
+st.write(df)
 
 # Create some sample data for the brown bear
 data_brown_bear = { 
