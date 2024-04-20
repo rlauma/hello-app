@@ -42,4 +42,20 @@ if st.button(button_label):
         st.image("https://rigazoo.lv/wp-content/uploads/2023/05/apsis-3.jpeg", caption="Eirāzijas āpsis (Meles meles)", use_column_width=True)
 
     # Display the header for the table with smaller text without bold
-    st.markdown("
+    st.markdown("<h3 style='color: black; font-size: 16px;'>Taukskābju īpašības</h3>", unsafe_allow_html=True)
+
+    # Set the CSS style for the table to make text color black
+    table_style = """
+        <style>
+        .dataframe tbody tr th {
+            color: black;
+        }
+        .dataframe tbody tr td {
+            color: black;
+        }
+        </style>
+    """
+    st.write(table_style, unsafe_allow_html=True)
+
+    # Display the table
+    st.table(data_selected)
