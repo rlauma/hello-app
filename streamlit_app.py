@@ -1,6 +1,19 @@
 import streamlit as st
 import pandas as pd
 
+import streamlit as st
+import pandas as pd
+
+# Load data from Google Drive Excel file
+excel_url = "https://docs.google.com/spreadsheets/d/1OXzGj1jhVuzCmnRkYV8v8MqisPmKkz2MDIB8vDxeVrc/edit?usp=drive_link
+df = pd.read_excel(excel_url)
+
+# Display the data
+st.write(df)
+
+
+
+
 # Create some sample data
 data_badger = { 
     'Taukskābes nosaukums': ['arahidonskābe (20:4n-6)', 'dokozaheksaēnskābe (22:6n-3)', 'heptadekānskābe (17:0)', 'stearīnskābe (18:0)', 'oleīnskābe (18:1n-9)'],
