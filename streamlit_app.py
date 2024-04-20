@@ -3,7 +3,7 @@ import pandas as pd
 import requests
 
 # Load data from Google Drive Excel file
-excel_url = "https://docs.google.com/spreadsheets/d/1OXzGj1jhVuzCmnRkYV8v8MqisPmKkz2MDIB8vDxeVrc/export?format=xlsx"
+excel_url = "https://docs.google.com/spreadsheets/d/1OXzGj1jhVuzCmnRkYV8v8MqisPmKkz2MDIB8vDxeVrc/edit?usp=drive_link"
 response = requests.get(excel_url)
 
 # Save the Excel file locally
