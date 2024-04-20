@@ -2,16 +2,11 @@ import streamlit as st
 import pandas as pd
 import requests
 
-# Load data from Google Drive Excel file
-excel_url = "https://docs.google.com/spreadsheets/d/1OXzGj1jhVuzCmnRkYV8v8MqisPmKkz2MDIB8vDxeVrc/edit?usp=drive_link"
-response = requests.get(excel_url)
-
-# Save the Excel file locally
-with open("data.xlsx", "wb") as f:
-    f.write(response.content)
-
 # Read Excel data into DataFrame
 df = pd.read_excel("data.xlsx")
+
+# Print the first few rows of the DataFrame to check if data is loaded correctly
+print(df.head())
 
 # Create some sample data for the brown bear
 data_brown_bear = { 
