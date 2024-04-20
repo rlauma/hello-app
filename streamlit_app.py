@@ -1,16 +1,17 @@
 import streamlit as st
 import pandas as pd
 import requests
-from io import BytesIO
-
 
 # Load data from Google Drive Excel file
 excel_url = "https://docs.google.com/spreadsheets/d/1OXzGj1jhVuzCmnRkYV8v8MqisPmKkz2MDIB8vDxeVrc/export?format=xlsx"
 response = requests.get(excel_url)
-excel_data = response.content
+
+# Save the Excel file locally
+with open("data.xlsx", "wb") as f:
+    f.write(response.content)
 
 # Read Excel data into DataFrame
-df = pd.read_excel(BytesIO(excel_data))
+df = pd.read_excel("data.xlsx")
 
 # Create some sample data for the brown bear
 data_brown_bear = { 
