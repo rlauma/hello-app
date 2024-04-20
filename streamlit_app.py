@@ -5,7 +5,7 @@ import streamlit as st
 import pandas as pd
 
 # Load data from Google Drive Excel file
-excel_url = "https://docs.google.com/spreadsheets/d/1OXzGj1jhVuzCmnRkYV8v8MqisPmKkz2MDIB8vDxeVrc/edit?usp=drive_link
+excel_url = "https://docs.google.com/spreadsheets/d/1OXzGj1jhVuzCmnRkYV8v8MqisPmKkz2MDIB8vDxeVrc/edit?usp=drive_link"
 df = pd.read_excel(excel_url)
 
 # Display the data
