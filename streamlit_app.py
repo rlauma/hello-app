@@ -1,15 +1,20 @@
 import streamlit as st
 import pandas as pd
-import requests
-from io import BytesIO
+import gspread
+from gspread_pandas import Spread, Client
 
-# Load data from Google Drive Excel file
-excel_url = "https://docs.google.com/spreadsheets/d/1OXzGj1jhVuzCmnRkYV8v8MqisPmKkz2MDIB8vDxeVrc/export?format=xlsx"
-response = requests.get(excel_url)
-excel_data = response.content
+# Authenticate with Google Sheets
+client = Client()
 
-# Read Excel data into DataFrame
-df = pd.read_excel(BytesIO(excel_data), sheet_name="data", usecols=[0])
+# Open the Google Sheets document
+spread = Spread("1OXzGj1jhVuzCmnRkYV8v8MqisPmKkz2MDIB8vDxeVrc")
+
+# Read data from the "data" sheet
+df = spread.sheet_to_df(sheet="data")
+
+# Display the DataFrame
+st.write(df)
+
 
 # Create some sample data for the brown bear
 data_brown_bear = { 
