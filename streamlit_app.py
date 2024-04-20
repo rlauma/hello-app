@@ -11,6 +11,19 @@ excel_data = response.content
 # Read Excel data into DataFrame
 df = pd.read_excel(BytesIO(excel_data))
 
+# Display the data
+st.write(df)
+
+
+
+# Load data from Google Drive Excel file
+excel_url = "https://docs.google.com/spreadsheets/d/1OXzGj1jhVuzCmnRkYV8v8MqisPmKkz2MDIB8vDxeVrc/export?format=xlsx"
+response = requests.get(excel_url)
+excel_data = response.content
+
+# Read Excel data into DataFrame
+df = pd.read_excel(BytesIO(excel_data))
+
 # Create some sample data for the brown bear
 data_brown_bear = { 
     'Taukskābes nosaukums': ['palmitīnskābe (16:0)', 'stearīnskābe (18:0)', 'oleīnskābe (18:1n-9)', 'linolēnskābe (18:2n-6)', 'palmitoleīnskābe (16:1n-7)'],
