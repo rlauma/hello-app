@@ -3,6 +3,11 @@ import pandas as pd
 import requests
 from io import BytesIO
 
+# Load data from Google Drive Excel file
+excel_url = "https://docs.google.com/spreadsheets/d/1OXzGj1jhVuzCmnRkYV8v8MqisPmKkz2MDIB8vDxeVrc/export?format=xlsx"
+response = requests.get(excel_url)
+excel_data = response.content
+
 # Read Excel data into DataFrame
 df = pd.read_excel(BytesIO(excel_data), sheet_name="data", usecols=[0])
 
