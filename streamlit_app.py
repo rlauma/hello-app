@@ -9,7 +9,7 @@ client = gspread.authorize(credentials)
 
 # Open the Google Sheets document
 spread = client.open_by_url("https://docs.google.com/spreadsheets/d/1OXzGj1jhVuzCmnRkYV8v8MqisPmKkz2MDIB8vDxeVrc")
-worksheet = spread.worksheet("Ūdensvads")
+worksheet = spread.worksheet("277264184")
 
 # Read data from the worksheet into a DataFrame
 data_from_sheet = worksheet.get_all_values()
